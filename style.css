@@ -14,6 +14,10 @@ body {
   color: limegreen;
 }
 
+.igual{
+  color: darkgrey;
+}
+
 button {
   margin: 0px 0.5rem;
 }

@@ -4,9 +4,15 @@ const Contador = () => {
   const aumentar = () => setContador(contador + 1);
   const disminuir = () => setContador(contador - 1);
 
+  const estilo = () => {
+    if (contador === 0) return "igual";
+    if (contador < 0) return "menor";
+    return "mayor";
+  };
+
   return (
     <div>
-      <h1 className={contador < 0 ? "menor" : "mayor"}>Contador: {contador}</h1>
+      <h1 className={estilo()}>Contador: {contador}</h1>
       <hr />
 
       <button onClick={disminuir}>Disminuir</button>
